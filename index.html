@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Japan trip photos. My first HTML project">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Japan Trip Photos</title>
+  </head>
+  <body>
+    <div class="container"> <!-- NOTE: حامل لجميع عناصر الموقع -->
+      <div class="navi-bar">
+
+          <div class="left-navi"> <!-- NOTE: الجهه اليسرى من شريط الاختيارات -->
+              <div class="navi-link">
+                  <a href="about.html">عني</a>
+              </div>
+              <div class="navi-link">
+                  <a href="index.html">الرئيسية</a>
+              </div>
+          </div>
+
+          <div class="right-navi"> <!-- NOTE: الجهه اليمنى من شريط الاختيارات -->
+              <div class="name-style">
+                  <div class="logo"><img src="images/flag.png" alt="Japan Flag" title="Japan Flag"></div>
+              </div>
+          </div>
+      </div>
+
+      <div class="content_master">
+            <div class="content_itemS">
+
+                <div class="item">
+                      <img id = "myImg0" class="image" src="images/japan1.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle" onclick="picturePicker('myImg0')">
+                          <div class="text"  >test</div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg1" class="image" src="images/japan2.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+
+
+            <!--    <div class="item">
+                      <div id="myImg1" class="image" style="background-image:url('images/japan2.jpg')"></div>
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div> -->
+
+                <div class="item">
+                      <img id = "myImg2" class="image" src="images/japan3.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg3" class="image" src="images/japan4.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg4" class="image" src="images/japan5.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg5" class="image" src="images/japan6.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg6" class="image" src="images/japan7.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg7" class="image" src="images/japan8.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg8" class="image" src="images/japan9.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg9" class="image" src="images/japan10.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg10" class="image" src="images/japan11.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg11" class="image" src="images/japan12.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text" onclick="picturePicker(id)"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg12" class="image" src="images/japan13.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg13" class="image" src="images/japan14.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg14" class="image" src="images/japan15.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+                <div class="item">
+                      <img id = "myImg15" class="image" src="images/japan16.jpg" alt="a" onclick="picturePicker(id)">
+                      <div class="subtitle">
+                          <div class="text"></div>
+                      </div>
+                </div>
+
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01">
+                </div>
+
+            </div>
+      </div>
+      <br><br><br><br>
+      <div class="footer">شكراً لزيارتك</div>
+      <div class="footer">8/6/2020</div>
+
+
+    </div>
+
+
+  </body>
+
+  <script>
+
+      const portfolioItems = document.querySelectorAll('.item')
+      portfolioItems.forEach(portfolioItems => {
+          portfolioItems.addEventListener('mouseover', () =>{
+              console.log(portfolioItems.childNodes[1].classList);
+              portfolioItems.childNodes[1].classList.add('photo-darken')
+          })
+          portfolioItems.addEventListener('mouseout', () =>{
+              portfolioItems.childNodes[1].classList.remove('photo-darken')
+          })
+      })
+      var modal = document.getElementById("myModal");
+
+
+      function picturePicker(photoID){
+
+
+        var img = document.getElementById(photoID);
+        var modalImg = document.getElementById("img01");
+
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+
+        return
+        }
+
+
+
+      }
+
+
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+
+  </script>
+
+
+</html>
